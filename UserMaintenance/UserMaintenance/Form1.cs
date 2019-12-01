@@ -22,8 +22,8 @@ namespace UserMaintenance
             button1.Text = Resource1.Add;
 
             label1.Text = Resource1.LastName;
-            label2.Text = Resource1.FirstName; 
-            button1.Text = Resource1.Add
+            label2.Text = Resource1.FirstName;
+            button1.Text = Resource1.Add;
         }
     }
 }
