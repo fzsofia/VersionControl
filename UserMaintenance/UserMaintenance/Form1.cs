@@ -28,6 +28,15 @@ namespace UserMaintenance
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
+
+            var x = new User()
+            {
+                LastName = textBox1.Text,
+                FirstName = textBox2.Text
+            };
+            users.Add(x);
+
+
         }
     }
 }
