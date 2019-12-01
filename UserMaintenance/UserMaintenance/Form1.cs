@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,5 +39,17 @@ namespace UserMaintenance
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog dlg = new SaveFileDialog();
+
+            if (dlg.ShowDialog() != DialogResult.OK) return;
+
+            StreamWriter sw = new StreamWriter(@"C:\Users\zsofi\Desktop\nev.txt");
+
+
+        }
+
     }
 }
